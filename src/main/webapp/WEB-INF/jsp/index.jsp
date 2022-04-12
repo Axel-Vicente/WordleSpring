@@ -20,7 +20,7 @@
     <div class="container">
     <br><br>
         <form:form action="/play" method="get" modelAttribute="palabra">
-            <form:input class="form-control" type="text" placeholder="Escribe la palabra... letras: ${logitudPalabra}" path="palabra" maxlength="${logitudPalabra}" minlength="${logitudPalabra}" />
+            <form:input class="form-control" type="text" placeholder="Escribe la palabra... letras: ${logitudPalabra}" path="palabra" maxlength="${logitudPalabra}" minlength="${logitudPalabra}" required="required"/>
             <br>
             <c:if test="${!parar}">
                 <input class="btn btn-success" type="submit" value="Probar" />

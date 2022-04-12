@@ -40,7 +40,8 @@ public class WordleService {
     }
 
     public void play(String palabraProbada) {
-        palabraProbada.toLowerCase();
+        palabraProbada = palabraProbada.toLowerCase();
+
         palabrasUsadas.add(palabraProbada);
         comparacionLetras2 = palabraToChar(palabraProbada);
 
